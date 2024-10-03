@@ -14,6 +14,14 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .imageScale(.large)
                 .foregroundStyle(.tint)
+            
+            if #available(iOS 18.0, *) {
+                Image(systemName: "airplane")
+                    .font(.largeTitle)
+                    .imageScale(.large)
+                    .foregroundStyle(.red)
+                    .symbolEffect(.wiggle)
+            }
         }
         .padding()
     }
