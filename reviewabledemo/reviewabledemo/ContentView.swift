@@ -41,10 +41,14 @@ struct ContentView: View {
             }
             .frame(width: geo.size.width, height: geo.size.height)
             .alert("Add CTA Tapped", isPresented: $isAddTapped) {
-                
+                Button("OK", role: .cancel) {
+                    print("here @ Add")
+                }
             }
             .alert("Modify CTA Tapped", isPresented: $isModifyTapped) {
-                
+                Button("OK", role: .cancel) {
+                    print("here @ Modify")
+                }
             }
         }
     }
