@@ -14,7 +14,6 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-                .symbolEffect(.pulse)
         }
         .padding()
     }
